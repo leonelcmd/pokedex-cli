@@ -1,14 +1,12 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { POkemonListaComponent} from 
+
+
 
 @NgModule({
-  declarations: [
-  ],
+  declarations: [],
   imports: [
-    CommonModule,
-    Poke
+    CommonModule
   ]
-
 })
-export class PokemonModule { }
+export class HabilidadeModule { }
