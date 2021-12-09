@@ -1,7 +1,8 @@
 # Pokedex Client
 
-abstract: This is a sample project that applies clean code concepts, pagination, componenting and other good praticies at a front-end aplication
-
+abstract: 
+This is a sample project that applies clean code concepts, pagination, 
+componenting and other good praticies at a front-end aplication
 
 
 
@@ -11,7 +12,7 @@ The app main features:
     >fitler searching by name
     >pagination
 
-I've applied for this project:
+Tecnologies I've applied for this project:
     >bootstrap
     >Typescript
     >angular 13
