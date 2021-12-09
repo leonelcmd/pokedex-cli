@@ -1,13 +1,15 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { POkemonListaComponent} from 
+import { GenericRouterComponent } from './pokemon-routing.module';
+
 
 @NgModule({
   declarations: [
+    GenericRouterComponent,
   ],
   imports: [
     CommonModule,
-    Poke
+    PokemonModule
   ]
 
 })

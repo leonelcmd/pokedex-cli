@@ -9,7 +9,6 @@ const routes: Routes = [
   },
   {
     path: 'pokemon',
-    component: PokemonComponent,
     data: {
       title: 'Get pokemon list'
     }
@@ -17,7 +16,6 @@ const routes: Routes = [
   {
     path: 'cadastrar'
   },
-
 
 ];
 
