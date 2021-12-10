@@ -1,4 +1,9 @@
+
 import { Component, OnInit } from '@angular/core';
+import { IHabilidade } from 'src/app/modules/habilidade/model/habilidade.model';
+import { HabilidadeService } from 'src/app/modules/habilidade/service/habilidade.service';
+import { IPokemon } from '../../model/pokemon.model';
+import { PokemonService } from '../../service/pokemon.service';
 
 @Component({
   selector: 'app-pokemon-cadastrar',
@@ -7,9 +12,19 @@ import { Component, OnInit } from '@angular/core';
 })
 export class PokemonCadastrarComponent implements OnInit {
 
-  constructor() { }
+  habilidade: IHabilidade[] = [];
+  pokemon = {} as IPokemon;
 
-  ngOnInit(): void {
+
+  constructor(private habilidadeService: HabilidadeService, private pokemonService: PokemonService) { }
+
+  ngOnInit(): void {}
+
+  salvarPokemon() {
+    this.pokemonService.salvarPokemon(this.pokemon)
+    .then(result => {
+      console.log(result);
+    })
   }
 
 }
