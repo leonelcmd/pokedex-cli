@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 import { GenericRouterComponent } from './pokemon-routing.module';
 import { PokemonCadastrarComponent } from './page/pokemon-cadastrar/pokemon-cadastrar.component';
 import { PokemonListarComponent } from './page/pokemon-listar/pokemon-listar.component';
+import { FormsModule } from '@angular/forms';
 
 
 @NgModule({
@@ -13,7 +14,8 @@ import { PokemonListarComponent } from './page/pokemon-listar/pokemon-listar.com
   ],
   imports: [
     CommonModule,
-    PokemonModule
+    PokemonModule,
+    FormsModule,
   ]
 
 })

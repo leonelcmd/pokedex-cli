@@ -1,19 +1,20 @@
 import { Component, Input, OnInit, Output } from '@angular/core';
 import { EventEmitter } from 'stream';
+import { IHabilidade } from '../model/habilidade.model';
 
 @Component({
   selector: 'app-hablidade-form',
   templateUrl: './hablidade-form.component.html',
   styleUrls: ['./hablidade-form.component.css']
 })
-export class HablidadeFormComponent implements OnInit {
+export class HabilidadeFormComponent implements OnInit {
 
   constructor() {}
   @Input()
-  habilidade = {} as InputHabilidade;
+  habilidade = {} as IHabilidade;
 
   @Output()
-  private salvarHabilidadeEventPublisher = new EventEmitter<InputHabilidade>();
+  private salvarHabilidadeEventPublisher = new EventEmitter<IHabilidade>();
 
   ngOnInit(): void {
 
