@@ -1,10 +1,11 @@
-import { HabilidadeModule } from "../../habilidade/habilidade.module";
-import { VantagemModule } from "../../vantagem/vantagem.module";
+import { IHabilidade } from "../../habilidade/model/habilidade.model";
+import { IVantagem } from "../../vantagem/model/vantagem.model";
 
 export interface IPokemon {
     id: number;
     nome: string;
-    descrcicao: string;
-    habilidade: HabilidadeModule;
-    vantagem: VantagemModule;
+    tipoPokemon: string;
+    habilidade?: IHabilidade;
+    vantagem?: IVantagem;
+
 }

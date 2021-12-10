@@ -2,21 +2,15 @@
     <button id="btCadastrar" class="btn btn-success">Registrar Pokemon</button>
 </div>
 <div class="col-md-12">
-    <div class="col-md-12" *ngFor="let pokemon of pokemon.conteudo">
-        <div class="col-md-1">
-            {{produto.id}}
+    <div class="col-md-12" *ngFor="let pokemon of pokemons.conteudo">
+        <div class="col-md-2">
+            {{pokemon.id}}
         </div>
-        <div class="col-md-5">
+        <div class="col-md-7">
             {{pokemon.nome}}
         </div>
-        <div class="col-md-2">
-            {{produto.habilidade}}
-        </div>
-        <div class="col-md-2">
-            {{produto.vantagem}}
-        </div>
-        <div class="col-md-2">
-            <button class="btn btn-primary">Visualizar</button>
+        <div class="col-md-3">
+            <button class="btn btn-primary"(click)="visualizar(pokemon)">Visualizar</button>
         </div>
     </div>
 </div>

@@ -11,7 +11,7 @@ import { PokemonService } from '../../service/pokemon.service';
 })
 export class PokemonListarComponent implements OnInit {
 
-  pokemons = {} as IPageConfig<IPokemon>;
+  pokemons = [] as IPokemon[];
 
   constructor(private pokemonService: PokemonService, private routeService: RouteService) {}
 
@@ -21,7 +21,7 @@ export class PokemonListarComponent implements OnInit {
 
   getAll() {
     this.pokemonService.getAll().then(result => {
-      this.pokemons = result;
+      this.pokemons.concat(result);
     })
   }
 

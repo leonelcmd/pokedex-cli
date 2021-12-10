@@ -1,7 +1,15 @@
 <div class="col-md-12">Habilidade:</div>
 <div class="col-md-12">
-    <input class="form-input col-md-6" type="text" [(ngModel)]="categoria.descricao">
+    <div class="col-md-6">
+        <div class="col-md-12">Nome:</div>
+        <input class="form-input col-md-12" type="text" [(ngModel)]="habilidade.nome">
+    </div>
+
+    <div class="col-md-6">
+        <div class="col-md-12">Descrição:</div>
+        <input class="form-input col-md-12" type="text" [(ngModel)]="habilidade.descricao">
+    </div>
 </div>
 <div class="col-md-12">
-    <button class="btn btn-success" (click)="salvar()" [disabled]="disabled()" >Poke salvar</button>
+    <button class="btn btn-success" (click)="salvar()" [disabled]="disabled()" >salvar</button>
 </div>
