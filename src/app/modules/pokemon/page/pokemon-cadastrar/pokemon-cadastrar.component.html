@@ -1,0 +1,79 @@
+<div class="col-md-12">Nome:</div>
+<div class="col-md-12">
+    <input class="form-input col-md-6" type="text" [(ngModel)]="pokemon.nome">
+</div>
+<div class="col-md-12">Descrição:</div>
+<div class="col-md-12">
+    <input class="form-input col-md-6" type="text" [(ngModel)]="pokemon.descricao">
+</div>
+
+<div class="col-md-12">Tipo:</div>
+<div class="col-md-12">
+    <select class="form-input col-md-6" [(ngModel)]="pokemon.Tipo">
+        <option class="form-input col-md-6" value="Agua">
+            Agua
+        </option>
+        <option class="form-input col-md-6" value="Planta">
+            Planta
+        </option>
+        <option class="form-input col-md-6" value="Fogo">
+            Fogo
+        </option>
+        <option class="form-input col-md-6" value="Inseto">
+            Inseto
+        </option>
+        <option class="form-input col-md-6" value="Normal">
+            Normal
+        </option>
+        <option class="form-input col-md-6" value="Venenoso">
+            Venenoso
+        </option>
+        <option class="form-input col-md-6" value="Eletrico">
+            Eletrico
+        </option>
+        <option class="form-input col-md-6" value="Terra">
+            Terra
+        </option>
+        <option class="form-input col-md-6" value="Lutador">
+            Lutador
+        </option>
+        <option class="form-input col-md-6" value="Psiquico">
+            Psiquico
+        </option>
+        <option class="form-input col-md-6" value="Pedra">
+            Pedra
+        </option>
+        <option class="form-input col-md-6" value="Voador">
+            Voador
+        </option>
+        <option class="form-input col-md-6" value="Fantasma">
+            Fantasma
+        </option>
+        <option class="form-input col-md-6" value="Gelo">
+            Gelo
+        </option>
+        <option class="form-input col-md-6" value="Dragao">
+            Dragao            
+        </option>
+        <option class="form-input col-md-6" value="Metal">
+            Metal            
+        </option>
+        <option class="form-input col-md-6" value="Noturno">
+            Noturno            
+        </option>
+        <option class="form-input col-md-6" value="Fada">
+            Fada            
+        </option>
+    </select>
+</div>
+<div class="col-md-12">Vantagem:</div>
+<div class="col-md-12">
+    <input class="form-input col-md-6" type="boolean" [(ngModel)]="pokemon.Vantagem">
+</div>
+
+<div class="col-md-12"></div>
+<div class="col-md-12">
+    <button class="btn btn-success" (click)="salvarProduto()">
+        Salvar
+    </button>
+</div>

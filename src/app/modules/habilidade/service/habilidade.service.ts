@@ -1,4 +1,6 @@
 import { Injectable } from '@angular/core';
+import { HttpClient } from '@angular/common/http';
+import { IHabilidade } from '../model/habilidade.model';
 
 @Injectable({
   providedIn: 'root'
@@ -6,8 +8,13 @@ import { Injectable } from '@angular/core';
 
 export class HabilidadeService {
 
-  constructor(private httpCLient: HttoCLient) {
+  constructor(private httpClient: HttpClient ) { }
 
+  salvarHabilidade(habilidade: IHabilidade): Promise<IHabilidade> {
+    return this.httpClient.post<IHabilidade>('http://localhost:8080/habilidade/', habilidade).toPromise();
   }
-  salvarHabilidade(habilidade: InputCa)
+
+  
+
+
 }
