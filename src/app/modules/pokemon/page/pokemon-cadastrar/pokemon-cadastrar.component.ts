@@ -18,7 +18,9 @@ export class PokemonCadastrarComponent implements OnInit {
 
   constructor(private habilidadeService: HabilidadeService, private pokemonService: PokemonService) { }
 
-  ngOnInit(): void {}
+  ngOnInit(): void {
+    // não sei o que colocar aqui
+  }
 
   salvarPokemon() {
     this.pokemonService.salvarPokemon(this.pokemon)
