@@ -1,4 +1,8 @@
 import { Component, OnInit } from '@angular/core';
+import { IPageConfig } from 'src/app/commons/models/pagination.model';
+import { RouteService } from 'src/app/commons/sevices/route.service';
+import { IPokemon } from '../../model/pokemon.model';
+import { PokemonService } from '../../service/pokemon.service';
 
 @Component({
   selector: 'app-pokemon-listar',
@@ -7,9 +11,18 @@ import { Component, OnInit } from '@angular/core';
 })
 export class PokemonListarComponent implements OnInit {
 
-  constructor() { }
+  pokemons = {} as IPageConfig<IPokemon>;
+
+  constructor(private pokemonService: PokemonService, private routeService: RouteService) {}
 
   ngOnInit(): void {
+    this.getAll();
+  }
+
+  getAll() {
+    this.pokemonService.getAll().then(result => {
+      this.pokemons = result;
+    })
   }
 
 }
